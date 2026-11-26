@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Generated output — videos, audio, rendered frames (too large for git)
+out/
+projects/
+public/audio/
+public/projects/
+
+# Keep sticker assets (small SVGs needed to run the pipeline)
+!public/stickers/
+!public/stickers-*/
+!public/chars/
+!public/props/
+
+# Environment / secrets
+.env
+.env.local
+
+# Build artifacts
+*.bak
+*.bak2
+*.bak-*
+err.txt
+out.txt
+
+# Render logs
+render.*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# TypeScript build
+dist/
+*.tsbuildinfo

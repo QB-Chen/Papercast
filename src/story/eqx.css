@@ -1,0 +1,14 @@
+/* 公式逐项讲解：当前讲到的部分高亮，其余部分变淡。颜色由组件按帧写进 CSS 变量，实现渐变 */
+.eqx .katex {
+  color: var(--eqx-dim, #1f3a5f);
+}
+.eqx .katex .hlpart,
+.eqx .katex .hlpart * {
+  color: var(--eqx-hl, #d6336c) !important;
+}
+.eqx .katex .hlpart {
+  background: var(--eqx-bg, transparent);
+  border-radius: 10px;
+  padding: 0.04em 0.12em;
+  margin: 0 -0.12em;
+}

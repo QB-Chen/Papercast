@@ -1,0 +1,876 @@
+{
+  "fps": 30,
+  "totalFrames": 15733,
+  "scenes": [
+    {
+      "id": "hook",
+      "start": 0,
+      "dur": 767,
+      "sentences": [
+        {
+          "id": "h1",
+          "text": "你有没有遛过狗？狗子一出门，是不是总想往外冲？",
+          "audio": "audio/drpo/fast/h1.wav",
+          "local": 15,
+          "start": 15,
+          "dur": 140
+        },
+        {
+          "id": "h2",
+          "text": "所以我们才需要一根牵引绳，把它拉住。",
+          "audio": "audio/drpo/fast/h2.wav",
+          "local": 163,
+          "start": 163,
+          "dur": 118
+        },
+        {
+          "id": "h3",
+          "text": "其实训练大模型做强化学习，也是一样的。",
+          "audio": "audio/drpo/fast/h3.wav",
+          "local": 289,
+          "start": 289,
+          "dur": 132
+        },
+        {
+          "id": "h4",
+          "text": "今天这篇论文，就是给这根绳换了个新设计。",
+          "audio": "audio/drpo/fast/h4.wav",
+          "local": 429,
+          "start": 429,
+          "dur": 119
+        },
+        {
+          "id": "h5",
+          "text": "它来自腾讯混元，叫 DRPO，我给大家用大白话讲一讲。",
+          "audio": "audio/drpo/fast/h5.wav",
+          "local": 556,
+          "start": 556,
+          "dur": 184
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "start": 767,
+      "dur": 1581,
+      "sentences": [
+        {
+          "id": "b1",
+          "text": "那我们先搞明白，为什么需要这根绳。",
+          "audio": "audio/drpo/fast/b1.wav",
+          "local": 15,
+          "start": 782,
+          "dur": 92
+        },
+        {
+          "id": "b1a",
+          "text": "强化学习，就是让模型自己生成答案，答对了给奖励。",
+          "audio": "audio/drpo/fast/b1a.wav",
+          "local": 115,
+          "start": 882,
+          "dur": 158
+        },
+        {
+          "id": "b2",
+          "text": "每更新一步，模型输出的概率分布，就会变一点。",
+          "audio": "audio/drpo/fast/b2.wav",
+          "local": 281,
+          "start": 1048,
+          "dur": 166
+        },
+        {
+          "id": "b3",
+          "text": "如果步子迈得太大，训练就直接崩掉了。",
+          "audio": "audio/drpo/fast/b3.wav",
+          "local": 455,
+          "start": 1222,
+          "dur": 105
+        },
+        {
+          "id": "b4",
+          "text": "更麻烦的是，现实里的训练，基本都是离策略的。",
+          "audio": "audio/drpo/fast/b4.wav",
+          "local": 568,
+          "start": 1335,
+          "dur": 140
+        },
+        {
+          "id": "b5",
+          "text": "什么意思呢？采样用的推理引擎，和训练用的引擎，数值上有细微差异。",
+          "audio": "audio/drpo/fast/b5.wav",
+          "local": 716,
+          "start": 1483,
+          "dur": 210
+        },
+        {
+          "id": "b6",
+          "text": "而且一批数据，还会拆成好几份，反复更新。",
+          "audio": "audio/drpo/fast/b6.wav",
+          "local": 934,
+          "start": 1701,
+          "dur": 136
+        },
+        {
+          "id": "b7",
+          "text": "结果就是，你手里牵着的这条狗，早就不是出门时那条了。",
+          "audio": "audio/drpo/fast/b7.wav",
+          "local": 1078,
+          "start": 1845,
+          "dur": 175
+        },
+        {
+          "id": "b8",
+          "text": "所以这时候，我们就特别需要一个信任区域。",
+          "audio": "audio/drpo/fast/b8.wav",
+          "local": 1261,
+          "start": 2028,
+          "dur": 140
+        },
+        {
+          "id": "b9",
+          "text": "说白了，就是画一个圈，告诉它：别跑出去。",
+          "audio": "audio/drpo/fast/b9.wav",
+          "local": 1409,
+          "start": 2176,
+          "dur": 145
+        }
+      ]
+    },
+    {
+      "id": "ratio",
+      "start": 2348,
+      "dur": 2074,
+      "sentences": [
+        {
+          "id": "r1",
+          "text": "那这个圈，一般是怎么量的呢？",
+          "audio": "audio/drpo/fast/r1.wav",
+          "local": 15,
+          "start": 2363,
+          "dur": 88
+        },
+        {
+          "id": "r2",
+          "text": "主流的 PPO 和 GRPO，量的是涨幅比例。",
+          "audio": "audio/drpo/fast/r2.wav",
+          "local": 111,
+          "start": 2459,
+          "dur": 127
+        },
+        {
+          "id": "r3",
+          "text": "新概率除以旧概率，超出范围，这一步的梯度就直接剪掉。",
+          "audio": "audio/drpo/fast/r3.wav",
+          "local": 246,
+          "start": 2594,
+          "dur": 158
+        },
+        {
+          "id": "r4",
+          "text": "听上去很合理，但问题是，大模型的词表是长尾的。",
+          "audio": "audio/drpo/fast/r4.wav",
+          "local": 412,
+          "start": 2760,
+          "dur": 158
+        },
+        {
+          "id": "r4a",
+          "text": "我们来看两个极端的例子，你就明白了。",
+          "audio": "audio/drpo/fast/r4a.wav",
+          "local": 578,
+          "start": 2926,
+          "dur": 106
+        },
+        {
+          "id": "r5",
+          "text": "先看蚂蚁，也就是一个概率很低的小词。",
+          "audio": "audio/drpo/fast/r5.wav",
+          "local": 692,
+          "start": 3040,
+          "dur": 119
+        },
+        {
+          "id": "r6",
+          "text": "它从千分之一涨到了千分之二，比例翻倍，立刻被拦住。",
+          "audio": "audio/drpo/fast/r6.wav",
+          "local": 819,
+          "start": 3167,
+          "dur": 154
+        },
+        {
+          "id": "r7",
+          "text": "可实际上，它不过多拿了千分之一的概率。",
+          "audio": "audio/drpo/fast/r7.wav",
+          "local": 981,
+          "start": 3329,
+          "dur": 149
+        },
+        {
+          "id": "r8",
+          "text": "再看大象，也就是一个概率很高的大词。",
+          "audio": "audio/drpo/fast/r8.wav",
+          "local": 1138,
+          "start": 3486,
+          "dur": 132
+        },
+        {
+          "id": "r9",
+          "text": "它从百分之五十涨到六十，比例才一点二倍，没人管。",
+          "audio": "audio/drpo/fast/r9.wav",
+          "local": 1278,
+          "start": 3626,
+          "dur": 167
+        },
+        {
+          "id": "r10",
+          "text": "可它却搬走了整整十个百分点的概率。",
+          "audio": "audio/drpo/fast/r10.wav",
+          "local": 1453,
+          "start": 3801,
+          "dur": 114
+        },
+        {
+          "id": "r11",
+          "text": "所以这把尺子的毛病就是：对小词太严，对大词太松。",
+          "audio": "audio/drpo/fast/r11.wav",
+          "local": 1575,
+          "start": 3923,
+          "dur": 180
+        },
+        {
+          "id": "r12",
+          "text": "论文统计过，概率低于百分之一的词，占了采样的百分之七点八。",
+          "audio": "audio/drpo/fast/r12.wav",
+          "local": 1763,
+          "start": 4111,
+          "dur": 171
+        },
+        {
+          "id": "r13",
+          "text": "这一小撮词，可不能随便忽略。",
+          "audio": "audio/drpo/fast/r13.wav",
+          "local": 1942,
+          "start": 4290,
+          "dur": 105
+        }
+      ]
+    },
+    {
+      "id": "dppo",
+      "start": 4422,
+      "dur": 1229,
+      "sentences": [
+        {
+          "id": "d1",
+          "text": "有人发现了这个毛病，提出了 DPPO，换了一把尺子。",
+          "audio": "audio/drpo/fast/d1.wav",
+          "local": 15,
+          "start": 4437,
+          "dur": 167
+        },
+        {
+          "id": "d2",
+          "text": "它不再比比例，而是直接看，绝对概率变了多少。",
+          "audio": "audio/drpo/fast/d2.wav",
+          "local": 190,
+          "start": 4612,
+          "dur": 136
+        },
+        {
+          "id": "d3",
+          "text": "这样一来，蚂蚁和大象，用的就是同一把尺子了。",
+          "audio": "audio/drpo/fast/d3.wav",
+          "local": 334,
+          "start": 4756,
+          "dur": 149
+        },
+        {
+          "id": "d4",
+          "text": "变化量超过阈值 δ，就算越界。",
+          "audio": "audio/drpo/fast/d4.wav",
+          "local": 491,
+          "start": 4913,
+          "dur": 127
+        },
+        {
+          "id": "d5",
+          "text": "但是呢，它处理越界的方式，有点粗暴。",
+          "audio": "audio/drpo/fast/d5.wav",
+          "local": 626,
+          "start": 5048,
+          "dur": 140
+        },
+        {
+          "id": "d6",
+          "text": "直接把继续往外冲的那部分梯度，设成零。",
+          "audio": "audio/drpo/fast/d6.wav",
+          "local": 774,
+          "start": 5196,
+          "dur": 118
+        },
+        {
+          "id": "d7",
+          "text": "这叫硬掩码，就好比狗跑出圈了，你只是撒手不管。",
+          "audio": "audio/drpo/fast/d7.wav",
+          "local": 900,
+          "start": 5322,
+          "dur": 145
+        },
+        {
+          "id": "d8",
+          "text": "而且在边界附近，上一秒还全力更新，下一秒就归零。",
+          "audio": "audio/drpo/fast/d8.wav",
+          "local": 1053,
+          "start": 5475,
+          "dur": 149
+        }
+      ]
+    },
+    {
+      "id": "drpo",
+      "start": 5651,
+      "dur": 2291,
+      "sentences": [
+        {
+          "id": "p1",
+          "text": "DRPO 的想法很简单：把硬开关，换成一根弹簧。",
+          "audio": "audio/drpo/fast/p1.wav",
+          "local": 15,
+          "start": 5666,
+          "dur": 171
+        },
+        {
+          "id": "p2",
+          "text": "也就是在原来的目标上，加一个平滑的二次惩罚。",
+          "audio": "audio/drpo/fast/p2.wav",
+          "local": 194,
+          "start": 5845,
+          "dur": 145
+        },
+        {
+          "id": "p3",
+          "text": "这个惩罚里，多乘了一个旧策略给这个词的概率。",
+          "audio": "audio/drpo/fast/p3.wav",
+          "local": 347,
+          "start": 5998,
+          "dur": 127
+        },
+        {
+          "id": "p4",
+          "text": "就是这一个小小的因子，让尺子从比例，变成了绝对概率变化。",
+          "audio": "audio/drpo/fast/p4.wav",
+          "local": 482,
+          "start": 6133,
+          "dur": 184
+        },
+        {
+          "id": "p5",
+          "text": "我们再对它求导，每个词的梯度前面，就多了一个连续的权重。",
+          "audio": "audio/drpo/fast/p5.wav",
+          "local": 674,
+          "start": 6325,
+          "dur": 158
+        },
+        {
+          "id": "p6",
+          "text": "这个权重由两样东西决定：越界了多少，以及往哪个方向走。",
+          "audio": "audio/drpo/fast/p6.wav",
+          "local": 840,
+          "start": 6491,
+          "dur": 202
+        },
+        {
+          "id": "p7",
+          "text": "如果是往外冲，权重就等于一减去，偏移量除以德尔塔。",
+          "audio": "audio/drpo/fast/p7.wav",
+          "local": 1050,
+          "start": 6701,
+          "dur": 180
+        },
+        {
+          "id": "p8",
+          "text": "你看，越靠近边界，往外冲的劲儿就越小。",
+          "audio": "audio/drpo/fast/p8.wav",
+          "local": 1238,
+          "start": 6889,
+          "dur": 127
+        },
+        {
+          "id": "p9",
+          "text": "走到边界，权重刚好是零。",
+          "audio": "audio/drpo/fast/p9.wav",
+          "local": 1373,
+          "start": 7024,
+          "dur": 92
+        },
+        {
+          "id": "p10",
+          "text": "要是已经冲出去了，权重就变成负的。",
+          "audio": "audio/drpo/fast/p10.wav",
+          "local": 1473,
+          "start": 7124,
+          "dur": 101
+        },
+        {
+          "id": "p11",
+          "text": "也就是梯度反向，它会把狗往回拽。",
+          "audio": "audio/drpo/fast/p11.wav",
+          "local": 1582,
+          "start": 7233,
+          "dur": 101
+        },
+        {
+          "id": "p12",
+          "text": "反过来，如果是往回走，权重就等于一加上，偏移量除以德尔塔。",
+          "audio": "audio/drpo/fast/p12.wav",
+          "local": 1691,
+          "start": 7342,
+          "dur": 201
+        },
+        {
+          "id": "p13",
+          "text": "这时候拉力会被放大，所以回来得更顺。",
+          "audio": "audio/drpo/fast/p13.wav",
+          "local": 1900,
+          "start": 7551,
+          "dur": 106
+        },
+        {
+          "id": "p14",
+          "text": "最关键的是，边界的位置，和 DPPO 一模一样。",
+          "audio": "audio/drpo/fast/p14.wav",
+          "local": 2014,
+          "start": 7665,
+          "dur": 141
+        },
+        {
+          "id": "p15",
+          "text": "我们只是把悬崖，改成了斜坡。",
+          "audio": "audio/drpo/fast/p15.wav",
+          "local": 2163,
+          "start": 7814,
+          "dur": 101
+        }
+      ]
+    },
+    {
+      "id": "spo",
+      "start": 7942,
+      "dur": 1190,
+      "sentences": [
+        {
+          "id": "s1",
+          "text": "可能有人会问，这不就是 SPO 吗？为什么不直接用它？",
+          "audio": "audio/drpo/fast/s1.wav",
+          "local": 15,
+          "start": 7957,
+          "dur": 136
+        },
+        {
+          "id": "s2",
+          "text": "SPO 也是平滑的二次惩罚，区别是，它没有乘旧概率。",
+          "audio": "audio/drpo/fast/s2.wav",
+          "local": 159,
+          "start": 8101,
+          "dur": 162
+        },
+        {
+          "id": "s3",
+          "text": "不乘的话，等价于惩罚要除以旧概率。",
+          "audio": "audio/drpo/fast/s3.wav",
+          "local": 329,
+          "start": 8271,
+          "dur": 114
+        },
+        {
+          "id": "s4",
+          "text": "遇到概率特别低的词，这个权重就会无限放大。",
+          "audio": "audio/drpo/fast/s4.wav",
+          "local": 451,
+          "start": 8393,
+          "dur": 119
+        },
+        {
+          "id": "s5",
+          "text": "绳子越拉越紧，直接把小词勒住了。",
+          "audio": "audio/drpo/fast/s5.wav",
+          "local": 578,
+          "start": 8520,
+          "dur": 123
+        },
+        {
+          "id": "s6",
+          "text": "而 DRPO 乘上去以后，惩罚就是纯粹的绝对概率差。",
+          "audio": "audio/drpo/fast/s6.wav",
+          "local": 709,
+          "start": 8651,
+          "dur": 175
+        },
+        {
+          "id": "s7",
+          "text": "概率差最大也不会超过一，所以权重永远有界。",
+          "audio": "audio/drpo/fast/s7.wav",
+          "local": 892,
+          "start": 8834,
+          "dur": 149
+        },
+        {
+          "id": "s8",
+          "text": "一个会勒住小词，一个怎么拉都有分寸。",
+          "audio": "audio/drpo/fast/s8.wav",
+          "local": 1049,
+          "start": 8991,
+          "dur": 114
+        }
+      ]
+    },
+    {
+      "id": "derive",
+      "start": 9132,
+      "dur": 2298,
+      "sentences": [
+        {
+          "id": "v1",
+          "text": "好了，你可能想问，这个公式到底是怎么来的？我们一步步推。",
+          "audio": "audio/drpo/fast/v1.wav",
+          "local": 15,
+          "start": 9147,
+          "dur": 171
+        },
+        {
+          "id": "v2",
+          "text": "第一步：DPPO 的约束是，概率变化不超过 δ。",
+          "audio": "audio/drpo/fast/v2.wav",
+          "local": 194,
+          "start": 9326,
+          "dur": 179
+        },
+        {
+          "id": "v3",
+          "text": "这个式子，两边同时除以旧概率。",
+          "audio": "audio/drpo/fast/v3.wav",
+          "local": 381,
+          "start": 9513,
+          "dur": 101
+        },
+        {
+          "id": "v4",
+          "text": "就得到了一个，因词而异的比例界。",
+          "audio": "audio/drpo/fast/v4.wav",
+          "local": 490,
+          "start": 9622,
+          "dur": 101
+        },
+        {
+          "id": "v5",
+          "text": "你看，旧概率越低，这个比例界就越宽松。",
+          "audio": "audio/drpo/fast/v5.wav",
+          "local": 599,
+          "start": 9731,
+          "dur": 123
+        },
+        {
+          "id": "v6",
+          "text": "第二步：借用 SPO 的办法，把这个边界做成二次惩罚。",
+          "audio": "audio/drpo/fast/v6.wav",
+          "local": 730,
+          "start": 9862,
+          "dur": 154
+        },
+        {
+          "id": "v7",
+          "text": "对比例求导，令它为零，最优点正好落在边界上。",
+          "audio": "audio/drpo/fast/v7.wav",
+          "local": 892,
+          "start": 10024,
+          "dur": 158
+        },
+        {
+          "id": "v8",
+          "text": "第三步：把 ε 换成 δ / μ。",
+          "audio": "audio/drpo/fast/v8.wav",
+          "local": 1058,
+          "start": 10190,
+          "dur": 153
+        },
+        {
+          "id": "v9",
+          "text": "化简之后，分母里的旧概率，就跑到了分子上。",
+          "audio": "audio/drpo/fast/v9.wav",
+          "local": 1219,
+          "start": 10351,
+          "dur": 153
+        },
+        {
+          "id": "v10",
+          "text": "再求一次导，最优点就变成：新概率 = 旧概率 ± δ。",
+          "audio": "audio/drpo/fast/v10.wav",
+          "local": 1380,
+          "start": 10512,
+          "dur": 210
+        },
+        {
+          "id": "v11",
+          "text": "你看，这和 DPPO 的边界，一模一样。",
+          "audio": "audio/drpo/fast/v11.wav",
+          "local": 1598,
+          "start": 10730,
+          "dur": 119
+        },
+        {
+          "id": "v12",
+          "text": "第四步：对参数求梯度，旧概率乘比例减一，恰好是概率差。",
+          "audio": "audio/drpo/fast/v12.wav",
+          "local": 1725,
+          "start": 10857,
+          "dur": 193
+        },
+        {
+          "id": "v13",
+          "text": "于是梯度前面，多出了一个权重：1 − 方向 × D / δ。",
+          "audio": "audio/drpo/fast/v13.wav",
+          "local": 1926,
+          "start": 11058,
+          "dur": 210
+        },
+        {
+          "id": "v14",
+          "text": "这，就是前面那根，会越界反向的弹簧。",
+          "audio": "audio/drpo/fast/v14.wav",
+          "local": 2144,
+          "start": 11276,
+          "dur": 127
+        }
+      ]
+    },
+    {
+      "id": "exp",
+      "start": 11430,
+      "dur": 1959,
+      "sentences": [
+        {
+          "id": "e1",
+          "text": "那效果到底怎么样呢？论文一共做了六组实验。",
+          "audio": "audio/drpo/fast/e1.wav",
+          "local": 15,
+          "start": 11445,
+          "dur": 140
+        },
+        {
+          "id": "e2",
+          "text": "模型涵盖千问三的四十亿、三百亿，和千问三点五的三百五十亿。",
+          "audio": "audio/drpo/fast/e2.wav",
+          "local": 163,
+          "start": 11593,
+          "dur": 206
+        },
+        {
+          "id": "e3",
+          "text": "外加一个 DeepSeek 蒸馏出来的十五亿小模型。",
+          "audio": "audio/drpo/fast/e3.wav",
+          "local": 377,
+          "start": 11807,
+          "dur": 145
+        },
+        {
+          "id": "e4",
+          "text": "数据是大约一万三千道数学题，用 AIME 来评测。",
+          "audio": "audio/drpo/fast/e4.wav",
+          "local": 530,
+          "start": 11960,
+          "dur": 176
+        },
+        {
+          "id": "e5",
+          "text": "他们还特意加了 FP8 低精度，让训练和推理的差异更大。",
+          "audio": "audio/drpo/fast/e5.wav",
+          "local": 714,
+          "start": 12144,
+          "dur": 145
+        },
+        {
+          "id": "e6",
+          "text": "结果是，基于比例的 GRPO 和 SPO，训练很不稳定。",
+          "audio": "audio/drpo/fast/e6.wav",
+          "local": 867,
+          "start": 12297,
+          "dur": 214
+        },
+        {
+          "id": "e7",
+          "text": "尤其是低精度下，经常还没练好就崩了。",
+          "audio": "audio/drpo/fast/e7.wav",
+          "local": 1089,
+          "start": 12519,
+          "dur": 123
+        },
+        {
+          "id": "e8",
+          "text": "硬掩码的 DPPO 能稳住，但收敛往往更慢，终点也更低。",
+          "audio": "audio/drpo/fast/e8.wav",
+          "local": 1220,
+          "start": 12650,
+          "dur": 179
+        },
+        {
+          "id": "e9",
+          "text": "完全不加信任区域也不行，六组里有三组掉点。",
+          "audio": "audio/drpo/fast/e9.wav",
+          "local": 1407,
+          "start": 12837,
+          "dur": 158
+        },
+        {
+          "id": "e10",
+          "text": "千问三的四十亿模型上，准确率从零点二五掉到零点一七。",
+          "audio": "audio/drpo/fast/e10.wav",
+          "local": 1573,
+          "start": 13003,
+          "dur": 171
+        },
+        {
+          "id": "e11",
+          "text": "而 DRPO，六组都稳，追平或者超过了最强的基线。",
+          "audio": "audio/drpo/fast/e11.wav",
+          "local": 1752,
+          "start": 13182,
+          "dur": 180
+        }
+      ]
+    },
+    {
+      "id": "abl",
+      "start": 13389,
+      "dur": 1080,
+      "sentences": [
+        {
+          "id": "a1",
+          "text": "论文还做了消融实验，总结出了三条设计准则。",
+          "audio": "audio/drpo/fast/a1.wav",
+          "local": 15,
+          "start": 13404,
+          "dur": 127
+        },
+        {
+          "id": "a2",
+          "text": "第一，边界要贴合真实的偏移，也就是绝对概率变化。",
+          "audio": "audio/drpo/fast/a2.wav",
+          "local": 150,
+          "start": 13539,
+          "dur": 158
+        },
+        {
+          "id": "a3",
+          "text": "第二，在长尾词表里，梯度权重必须有界。",
+          "audio": "audio/drpo/fast/a3.wav",
+          "local": 316,
+          "start": 13705,
+          "dur": 127
+        },
+        {
+          "id": "a4",
+          "text": "第三，越界以后，要给一个平滑的纠正信号。",
+          "audio": "audio/drpo/fast/a4.wav",
+          "local": 451,
+          "start": 13840,
+          "dur": 131
+        },
+        {
+          "id": "a5",
+          "text": "另外，惩罚项还要乘上优势的绝对值。",
+          "audio": "audio/drpo/fast/a5.wav",
+          "local": 590,
+          "start": 13979,
+          "dur": 127
+        },
+        {
+          "id": "a6",
+          "text": "论文发现，去掉它，性能会下降，训练也变得不稳。",
+          "audio": "audio/drpo/fast/a6.wav",
+          "local": 725,
+          "start": 14114,
+          "dur": 167
+        },
+        {
+          "id": "a7",
+          "text": "至于常见的 KL 和 TV 惩罚，效果也都不如 DRPO。",
+          "audio": "audio/drpo/fast/a7.wav",
+          "local": 900,
+          "start": 14289,
+          "dur": 153
+        }
+      ]
+    },
+    {
+      "id": "out",
+      "start": 14469,
+      "dur": 1264,
+      "sentences": [
+        {
+          "id": "o1",
+          "text": "好了，我们来乱七八糟地总结一下。",
+          "audio": "audio/drpo/fast/o1.wav",
+          "local": 15,
+          "start": 14484,
+          "dur": 88
+        },
+        {
+          "id": "o1a",
+          "text": "强化学习要稳定，就得给模型画一个信任区域。",
+          "audio": "audio/drpo/fast/o1a.wav",
+          "local": 111,
+          "start": 14580,
+          "dur": 132
+        },
+        {
+          "id": "o1b",
+          "text": "PPO 用比例来量，对长尾的小词不公平。",
+          "audio": "audio/drpo/fast/o1b.wav",
+          "local": 251,
+          "start": 14720,
+          "dur": 136
+        },
+        {
+          "id": "o1c",
+          "text": "DPPO 改量绝对概率，但越界只会撒手不管。",
+          "audio": "audio/drpo/fast/o1c.wav",
+          "local": 395,
+          "start": 14864,
+          "dur": 184
+        },
+        {
+          "id": "o2",
+          "text": "DRPO 把硬掩码换成弹簧，边界不变，梯度连续，越界还能被拉回来。",
+          "audio": "audio/drpo/fast/o2.wav",
+          "local": 587,
+          "start": 15056,
+          "dur": 236
+        },
+        {
+          "id": "o2a",
+          "text": "当然，这篇论文的实验只覆盖了数学推理，别的任务还有待验证。",
+          "audio": "audio/drpo/fast/o2a.wav",
+          "local": 831,
+          "start": 15300,
+          "dur": 166
+        },
+        {
+          "id": "o3",
+          "text": "下次再遛狗的时候，别忘了想想这根绳。",
+          "audio": "audio/drpo/fast/o3.wav",
+          "local": 1005,
+          "start": 15474,
+          "dur": 114
+        },
+        {
+          "id": "o4",
+          "text": "论文和代码地址，都放在画面上了。",
+          "audio": "audio/drpo/fast/o4.wav",
+          "local": 1127,
+          "start": 15596,
+          "dur": 110
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+贴图来源: Fluent Emoji Flat (Microsoft Corporation)
+项目: https://github.com/microsoft/fluentui-emoji
+许可证: MIT, https://github.com/microsoft/fluentui-emoji/blob/main/LICENSE
+通过 Iconify 获取: https://api.iconify.design/
+MIT 许可允许商用,需在分发时保留版权声明。

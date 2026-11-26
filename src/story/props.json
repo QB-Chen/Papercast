@@ -1,0 +1,922 @@
+[
+  {
+    "id": "pot-of-food",
+    "zh": "一锅菜",
+    "group": "食物"
+  },
+  {
+    "id": "shallow-pan-of-food",
+    "zh": "炒菜锅",
+    "group": "食物"
+  },
+  {
+    "id": "cooking",
+    "zh": "煎蛋/炒菜",
+    "group": "食物"
+  },
+  {
+    "id": "bowl-with-spoon",
+    "zh": "一碗汤",
+    "group": "食物"
+  },
+  {
+    "id": "steaming-bowl",
+    "zh": "热汤面",
+    "group": "食物"
+  },
+  {
+    "id": "fork-and-knife-with-plate",
+    "zh": "一盘菜",
+    "group": "食物"
+  },
+  {
+    "id": "hamburger",
+    "zh": "汉堡",
+    "group": "食物"
+  },
+  {
+    "id": "pizza",
+    "zh": "披萨",
+    "group": "食物"
+  },
+  {
+    "id": "bento-box",
+    "zh": "便当",
+    "group": "食物"
+  },
+  {
+    "id": "cooked-rice",
+    "zh": "米饭",
+    "group": "食物"
+  },
+  {
+    "id": "spaghetti",
+    "zh": "意面",
+    "group": "食物"
+  },
+  {
+    "id": "sushi",
+    "zh": "寿司",
+    "group": "食物"
+  },
+  {
+    "id": "dumpling",
+    "zh": "饺子",
+    "group": "食物"
+  },
+  {
+    "id": "bread",
+    "zh": "面包",
+    "group": "食物"
+  },
+  {
+    "id": "green-salad",
+    "zh": "沙拉",
+    "group": "食物"
+  },
+  {
+    "id": "cut-of-meat",
+    "zh": "肉排",
+    "group": "食物"
+  },
+  {
+    "id": "poultry-leg",
+    "zh": "鸡腿",
+    "group": "食物"
+  },
+  {
+    "id": "egg",
+    "zh": "鸡蛋",
+    "group": "食物"
+  },
+  {
+    "id": "red-apple",
+    "zh": "苹果",
+    "group": "食物"
+  },
+  {
+    "id": "banana",
+    "zh": "香蕉",
+    "group": "食物"
+  },
+  {
+    "id": "watermelon",
+    "zh": "西瓜",
+    "group": "食物"
+  },
+  {
+    "id": "strawberry",
+    "zh": "草莓",
+    "group": "食物"
+  },
+  {
+    "id": "tomato",
+    "zh": "番茄",
+    "group": "食物"
+  },
+  {
+    "id": "carrot",
+    "zh": "胡萝卜",
+    "group": "食物"
+  },
+  {
+    "id": "birthday-cake",
+    "zh": "蛋糕",
+    "group": "食物"
+  },
+  {
+    "id": "shortcake",
+    "zh": "小蛋糕",
+    "group": "食物"
+  },
+  {
+    "id": "ice-cream",
+    "zh": "冰淇淋",
+    "group": "食物"
+  },
+  {
+    "id": "hot-beverage",
+    "zh": "热饮",
+    "group": "食物"
+  },
+  {
+    "id": "teacup-without-handle",
+    "zh": "茶",
+    "group": "食物"
+  },
+  {
+    "id": "cup-with-straw",
+    "zh": "饮料",
+    "group": "食物"
+  },
+  {
+    "id": "kitchen-knife",
+    "zh": "菜刀",
+    "group": "食物"
+  },
+  {
+    "id": "package",
+    "zh": "包裹/箱子",
+    "group": "物品"
+  },
+  {
+    "id": "briefcase",
+    "zh": "公文包",
+    "group": "物品"
+  },
+  {
+    "id": "page-facing-up",
+    "zh": "文件",
+    "group": "物品"
+  },
+  {
+    "id": "memo",
+    "zh": "便签",
+    "group": "物品"
+  },
+  {
+    "id": "file-folder",
+    "zh": "文件夹",
+    "group": "物品"
+  },
+  {
+    "id": "clipboard",
+    "zh": "写字板",
+    "group": "物品"
+  },
+  {
+    "id": "books",
+    "zh": "书堆",
+    "group": "物品"
+  },
+  {
+    "id": "open-book",
+    "zh": "打开的书",
+    "group": "物品"
+  },
+  {
+    "id": "newspaper",
+    "zh": "报纸",
+    "group": "物品"
+  },
+  {
+    "id": "envelope",
+    "zh": "信封",
+    "group": "物品"
+  },
+  {
+    "id": "mobile-phone",
+    "zh": "手机",
+    "group": "物品"
+  },
+  {
+    "id": "laptop",
+    "zh": "笔记本电脑",
+    "group": "物品"
+  },
+  {
+    "id": "desktop-computer",
+    "zh": "台式电脑",
+    "group": "物品"
+  },
+  {
+    "id": "keyboard",
+    "zh": "键盘",
+    "group": "物品"
+  },
+  {
+    "id": "light-bulb",
+    "zh": "灯泡",
+    "group": "物品"
+  },
+  {
+    "id": "battery",
+    "zh": "电池",
+    "group": "物品"
+  },
+  {
+    "id": "gear",
+    "zh": "齿轮",
+    "group": "物品"
+  },
+  {
+    "id": "wrench",
+    "zh": "扳手",
+    "group": "物品"
+  },
+  {
+    "id": "hammer",
+    "zh": "锤子",
+    "group": "物品"
+  },
+  {
+    "id": "key",
+    "zh": "钥匙",
+    "group": "物品"
+  },
+  {
+    "id": "locked",
+    "zh": "锁",
+    "group": "物品"
+  },
+  {
+    "id": "magnifying-glass-tilted-left",
+    "zh": "放大镜",
+    "group": "物品"
+  },
+  {
+    "id": "scissors",
+    "zh": "剪刀",
+    "group": "物品"
+  },
+  {
+    "id": "paintbrush",
+    "zh": "画笔",
+    "group": "物品"
+  },
+  {
+    "id": "pencil",
+    "zh": "铅笔",
+    "group": "物品"
+  },
+  {
+    "id": "puzzle-piece",
+    "zh": "拼图",
+    "group": "物品"
+  },
+  {
+    "id": "game-die",
+    "zh": "骰子",
+    "group": "物品"
+  },
+  {
+    "id": "balance-scale",
+    "zh": "天平",
+    "group": "物品"
+  },
+  {
+    "id": "money-bag",
+    "zh": "钱袋",
+    "group": "物品"
+  },
+  {
+    "id": "coin",
+    "zh": "硬币",
+    "group": "物品"
+  },
+  {
+    "id": "dollar-banknote",
+    "zh": "钞票",
+    "group": "物品"
+  },
+  {
+    "id": "credit-card",
+    "zh": "银行卡",
+    "group": "物品"
+  },
+  {
+    "id": "wrapped-gift",
+    "zh": "礼物",
+    "group": "物品"
+  },
+  {
+    "id": "trophy",
+    "zh": "奖杯",
+    "group": "物品"
+  },
+  {
+    "id": "1st-place-medal",
+    "zh": "金牌",
+    "group": "物品"
+  },
+  {
+    "id": "chequered-flag",
+    "zh": "终点旗",
+    "group": "物品"
+  },
+  {
+    "id": "bell",
+    "zh": "铃",
+    "group": "物品"
+  },
+  {
+    "id": "megaphone",
+    "zh": "喇叭",
+    "group": "物品"
+  },
+  {
+    "id": "stopwatch",
+    "zh": "秒表",
+    "group": "物品"
+  },
+  {
+    "id": "hourglass-not-done",
+    "zh": "沙漏",
+    "group": "物品"
+  },
+  {
+    "id": "calendar",
+    "zh": "日历",
+    "group": "物品"
+  },
+  {
+    "id": "wastebasket",
+    "zh": "垃圾桶",
+    "group": "物品"
+  },
+  {
+    "id": "door",
+    "zh": "门",
+    "group": "物品"
+  },
+  {
+    "id": "shopping-cart",
+    "zh": "购物车",
+    "group": "物品"
+  },
+  {
+    "id": "shopping-bags",
+    "zh": "购物袋",
+    "group": "物品"
+  },
+  {
+    "id": "ticket",
+    "zh": "票",
+    "group": "物品"
+  },
+  {
+    "id": "compass",
+    "zh": "指南针",
+    "group": "物品"
+  },
+  {
+    "id": "telescope",
+    "zh": "望远镜",
+    "group": "物品"
+  },
+  {
+    "id": "microscope",
+    "zh": "显微镜",
+    "group": "物品"
+  },
+  {
+    "id": "dna",
+    "zh": "基因",
+    "group": "物品"
+  },
+  {
+    "id": "test-tube",
+    "zh": "试管",
+    "group": "物品"
+  },
+  {
+    "id": "bar-chart",
+    "zh": "柱状图",
+    "group": "物品"
+  },
+  {
+    "id": "chart-increasing",
+    "zh": "上涨图",
+    "group": "物品"
+  },
+  {
+    "id": "chart-decreasing",
+    "zh": "下跌图",
+    "group": "物品"
+  },
+  {
+    "id": "label",
+    "zh": "标签",
+    "group": "物品"
+  },
+  {
+    "id": "link",
+    "zh": "链条",
+    "group": "物品"
+  },
+  {
+    "id": "paperclip",
+    "zh": "回形针",
+    "group": "物品"
+  },
+  {
+    "id": "pushpin",
+    "zh": "图钉",
+    "group": "物品"
+  },
+  {
+    "id": "toolbox",
+    "zh": "工具箱",
+    "group": "物品"
+  },
+  {
+    "id": "magnet",
+    "zh": "磁铁",
+    "group": "物品"
+  },
+  {
+    "id": "crown",
+    "zh": "皇冠",
+    "group": "物品"
+  },
+  {
+    "id": "mirror",
+    "zh": "镜子",
+    "group": "物品"
+  },
+  {
+    "id": "balloon",
+    "zh": "气球",
+    "group": "物品"
+  },
+  {
+    "id": "house",
+    "zh": "房子",
+    "group": "地点交通"
+  },
+  {
+    "id": "office-building",
+    "zh": "写字楼",
+    "group": "地点交通"
+  },
+  {
+    "id": "hospital",
+    "zh": "医院",
+    "group": "地点交通"
+  },
+  {
+    "id": "school",
+    "zh": "学校",
+    "group": "地点交通"
+  },
+  {
+    "id": "bank",
+    "zh": "银行",
+    "group": "地点交通"
+  },
+  {
+    "id": "factory",
+    "zh": "工厂",
+    "group": "地点交通"
+  },
+  {
+    "id": "department-store",
+    "zh": "商场",
+    "group": "地点交通"
+  },
+  {
+    "id": "classical-building",
+    "zh": "大楼",
+    "group": "地点交通"
+  },
+  {
+    "id": "automobile",
+    "zh": "汽车",
+    "group": "地点交通"
+  },
+  {
+    "id": "bus",
+    "zh": "公交车",
+    "group": "地点交通"
+  },
+  {
+    "id": "airplane",
+    "zh": "飞机",
+    "group": "地点交通"
+  },
+  {
+    "id": "rocket",
+    "zh": "火箭",
+    "group": "地点交通"
+  },
+  {
+    "id": "bicycle",
+    "zh": "自行车",
+    "group": "地点交通"
+  },
+  {
+    "id": "ship",
+    "zh": "轮船",
+    "group": "地点交通"
+  },
+  {
+    "id": "train",
+    "zh": "火车",
+    "group": "地点交通"
+  },
+  {
+    "id": "tent",
+    "zh": "帐篷",
+    "group": "地点交通"
+  },
+  {
+    "id": "bridge-at-night",
+    "zh": "桥",
+    "group": "地点交通"
+  },
+  {
+    "id": "world-map",
+    "zh": "地图",
+    "group": "地点交通"
+  },
+  {
+    "id": "globe-showing-asia-australia",
+    "zh": "地球",
+    "group": "地点交通"
+  },
+  {
+    "id": "deciduous-tree",
+    "zh": "树",
+    "group": "自然动物"
+  },
+  {
+    "id": "seedling",
+    "zh": "幼苗",
+    "group": "自然动物"
+  },
+  {
+    "id": "sun",
+    "zh": "太阳",
+    "group": "自然动物"
+  },
+  {
+    "id": "cloud",
+    "zh": "云",
+    "group": "自然动物"
+  },
+  {
+    "id": "umbrella",
+    "zh": "伞",
+    "group": "自然动物"
+  },
+  {
+    "id": "snowflake",
+    "zh": "雪花",
+    "group": "自然动物"
+  },
+  {
+    "id": "fire",
+    "zh": "火",
+    "group": "自然动物"
+  },
+  {
+    "id": "mountain",
+    "zh": "山",
+    "group": "自然动物"
+  },
+  {
+    "id": "droplet",
+    "zh": "水滴",
+    "group": "自然动物"
+  },
+  {
+    "id": "dog-face",
+    "zh": "狗",
+    "group": "自然动物"
+  },
+  {
+    "id": "cat-face",
+    "zh": "猫",
+    "group": "自然动物"
+  },
+  {
+    "id": "mouse-face",
+    "zh": "老鼠",
+    "group": "自然动物"
+  },
+  {
+    "id": "ant",
+    "zh": "蚂蚁",
+    "group": "自然动物"
+  },
+  {
+    "id": "elephant",
+    "zh": "大象",
+    "group": "自然动物"
+  },
+  {
+    "id": "bird",
+    "zh": "小鸟",
+    "group": "自然动物"
+  },
+  {
+    "id": "fish",
+    "zh": "鱼",
+    "group": "自然动物"
+  },
+  {
+    "id": "turtle",
+    "zh": "乌龟",
+    "group": "自然动物"
+  },
+  {
+    "id": "monkey-face",
+    "zh": "猴子",
+    "group": "自然动物"
+  },
+  {
+    "id": "rabbit-face",
+    "zh": "兔子",
+    "group": "自然动物"
+  },
+  {
+    "id": "honeybee",
+    "zh": "蜜蜂",
+    "group": "自然动物"
+  },
+  {
+    "id": "red-question-mark",
+    "zh": "问号",
+    "group": "符号"
+  },
+  {
+    "id": "red-exclamation-mark",
+    "zh": "感叹号",
+    "group": "符号"
+  },
+  {
+    "id": "check-mark-button",
+    "zh": "对勾",
+    "group": "符号"
+  },
+  {
+    "id": "cross-mark",
+    "zh": "叉",
+    "group": "符号"
+  },
+  {
+    "id": "warning",
+    "zh": "警告",
+    "group": "符号"
+  },
+  {
+    "id": "prohibited",
+    "zh": "禁止",
+    "group": "符号"
+  },
+  {
+    "id": "up-arrow",
+    "zh": "向上箭头",
+    "group": "符号"
+  },
+  {
+    "id": "down-arrow",
+    "zh": "向下箭头",
+    "group": "符号"
+  },
+  {
+    "id": "right-arrow",
+    "zh": "向右箭头",
+    "group": "符号"
+  },
+  {
+    "id": "left-arrow",
+    "zh": "向左箭头",
+    "group": "符号"
+  },
+  {
+    "id": "counterclockwise-arrows-button",
+    "zh": "循环",
+    "group": "符号"
+  },
+  {
+    "id": "plus",
+    "zh": "加号",
+    "group": "符号"
+  },
+  {
+    "id": "minus",
+    "zh": "减号",
+    "group": "符号"
+  },
+  {
+    "id": "red-heart",
+    "zh": "爱心",
+    "group": "符号"
+  },
+  {
+    "id": "star",
+    "zh": "星星",
+    "group": "符号"
+  },
+  {
+    "id": "high-voltage",
+    "zh": "闪电",
+    "group": "符号"
+  },
+  {
+    "id": "sparkles",
+    "zh": "闪光",
+    "group": "符号"
+  },
+  {
+    "id": "speech-balloon",
+    "zh": "对话框",
+    "group": "符号"
+  },
+  {
+    "id": "thought-balloon",
+    "zh": "想法气泡",
+    "group": "符号"
+  },
+  {
+    "id": "zzz",
+    "zh": "睡觉",
+    "group": "符号"
+  },
+  {
+    "id": "collision",
+    "zh": "碰撞",
+    "group": "符号"
+  },
+  {
+    "id": "dashing-away",
+    "zh": "飞奔",
+    "group": "符号"
+  },
+  {
+    "id": "grinning-face",
+    "zh": "开心",
+    "group": "表情"
+  },
+  {
+    "id": "face-savoring-food",
+    "zh": "好吃",
+    "group": "表情"
+  },
+  {
+    "id": "smiling-face-with-heart-eyes",
+    "zh": "太爱了",
+    "group": "表情"
+  },
+  {
+    "id": "star-struck",
+    "zh": "惊艳",
+    "group": "表情"
+  },
+  {
+    "id": "partying-face",
+    "zh": "庆祝",
+    "group": "表情"
+  },
+  {
+    "id": "winking-face",
+    "zh": "眨眼",
+    "group": "表情"
+  },
+  {
+    "id": "smirking-face",
+    "zh": "得意",
+    "group": "表情"
+  },
+  {
+    "id": "thinking-face",
+    "zh": "思考",
+    "group": "表情"
+  },
+  {
+    "id": "confused-face",
+    "zh": "困惑",
+    "group": "表情"
+  },
+  {
+    "id": "neutral-face",
+    "zh": "面无表情",
+    "group": "表情"
+  },
+  {
+    "id": "slightly-frowning-face",
+    "zh": "不满意",
+    "group": "表情"
+  },
+  {
+    "id": "grimacing-face",
+    "zh": "尴尬",
+    "group": "表情"
+  },
+  {
+    "id": "face-with-rolling-eyes",
+    "zh": "翻白眼",
+    "group": "表情"
+  },
+  {
+    "id": "worried-face",
+    "zh": "担心",
+    "group": "表情"
+  },
+  {
+    "id": "downcast-face-with-sweat",
+    "zh": "冷汗",
+    "group": "表情"
+  },
+  {
+    "id": "pensive-face",
+    "zh": "失落",
+    "group": "表情"
+  },
+  {
+    "id": "nauseated-face",
+    "zh": "想吐",
+    "group": "表情"
+  },
+  {
+    "id": "face-vomiting",
+    "zh": "吐了",
+    "group": "表情"
+  },
+  {
+    "id": "angry-face",
+    "zh": "生气",
+    "group": "表情"
+  },
+  {
+    "id": "loudly-crying-face",
+    "zh": "大哭",
+    "group": "表情"
+  },
+  {
+    "id": "exploding-head",
+    "zh": "炸裂",
+    "group": "表情"
+  },
+  {
+    "id": "face-with-monocle",
+    "zh": "仔细看",
+    "group": "表情"
+  },
+  {
+    "id": "hugging-face",
+    "zh": "拥抱",
+    "group": "表情"
+  },
+  {
+    "id": "sleeping-face",
+    "zh": "困",
+    "group": "表情"
+  },
+  {
+    "id": "face-screaming-in-fear",
+    "zh": "吓坏了",
+    "group": "表情"
+  },
+  {
+    "id": "face-with-tears-of-joy",
+    "zh": "笑哭",
+    "group": "表情"
+  },
+  {
+    "id": "zany-face",
+    "zh": "疯狂",
+    "group": "表情"
+  },
+  {
+    "id": "face-with-raised-eyebrow",
+    "zh": "质疑",
+    "group": "表情"
+  },
+  {
+    "id": "melting-face",
+    "zh": "融化",
+    "group": "表情"
+  }
+]

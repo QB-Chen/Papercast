@@ -1,0 +1,52 @@
+{
+  "light-bulb": {
+    "key": "idea",
+    "loop": true,
+    "speed": 1
+  },
+  "thumbs-up": {
+    "key": "thumbsup",
+    "loop": false,
+    "speed": 1
+  },
+  "thinking-face": {
+    "key": "question",
+    "loop": true,
+    "speed": 1
+  },
+  "check-mark-button": {
+    "key": "check",
+    "loop": false,
+    "speed": 1
+  },
+  "party-popper": {
+    "key": "confetti",
+    "loop": false,
+    "speed": 1
+  },
+  "warning": {
+    "key": "warning",
+    "loop": true,
+    "speed": 1
+  },
+  "magnifying-glass-tilted-left": {
+    "key": "magnifier",
+    "loop": true,
+    "speed": 1
+  },
+  "bar-chart": {
+    "key": "growth",
+    "loop": false,
+    "speed": 1
+  },
+  "sparkles": {
+    "key": "sparkle",
+    "loop": true,
+    "speed": 1
+  },
+  "cross-mark": {
+    "key": "cross",
+    "loop": false,
+    "speed": 1
+  }
+}

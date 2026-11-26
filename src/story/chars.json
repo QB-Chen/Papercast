@@ -1,0 +1,267 @@
+[
+  {
+    "id": "teacher",
+    "zh": "老师",
+    "kind": "role"
+  },
+  {
+    "id": "student",
+    "zh": "学生",
+    "kind": "role"
+  },
+  {
+    "id": "cook",
+    "zh": "厨师",
+    "kind": "role"
+  },
+  {
+    "id": "judge",
+    "zh": "评委/法官",
+    "kind": "role"
+  },
+  {
+    "id": "scientist",
+    "zh": "科学家",
+    "kind": "role"
+  },
+  {
+    "id": "detective",
+    "zh": "侦探",
+    "kind": "role"
+  },
+  {
+    "id": "mechanic",
+    "zh": "修理工",
+    "kind": "role"
+  },
+  {
+    "id": "office-worker",
+    "zh": "上班族",
+    "kind": "role"
+  },
+  {
+    "id": "technologist",
+    "zh": "程序员",
+    "kind": "role"
+  },
+  {
+    "id": "farmer",
+    "zh": "农夫",
+    "kind": "role"
+  },
+  {
+    "id": "artist",
+    "zh": "画家",
+    "kind": "role"
+  },
+  {
+    "id": "pilot",
+    "zh": "飞行员",
+    "kind": "role"
+  },
+  {
+    "id": "astronaut",
+    "zh": "宇航员",
+    "kind": "role"
+  },
+  {
+    "id": "police-officer",
+    "zh": "警察",
+    "kind": "role"
+  },
+  {
+    "id": "construction-worker",
+    "zh": "工人",
+    "kind": "role"
+  },
+  {
+    "id": "health-worker",
+    "zh": "医生",
+    "kind": "role"
+  },
+  {
+    "id": "singer",
+    "zh": "歌手",
+    "kind": "role"
+  },
+  {
+    "id": "firefighter",
+    "zh": "消防员",
+    "kind": "role"
+  },
+  {
+    "id": "guard",
+    "zh": "守卫",
+    "kind": "role"
+  },
+  {
+    "id": "baby",
+    "zh": "婴儿",
+    "kind": "role"
+  },
+  {
+    "id": "older-person",
+    "zh": "老人",
+    "kind": "role"
+  },
+  {
+    "id": "child",
+    "zh": "小孩",
+    "kind": "role"
+  },
+  {
+    "id": "person-standing",
+    "zh": "站着",
+    "kind": "pose"
+  },
+  {
+    "id": "person-walking",
+    "zh": "走路",
+    "kind": "pose"
+  },
+  {
+    "id": "person-running",
+    "zh": "跑步",
+    "kind": "pose"
+  },
+  {
+    "id": "person-raising-hand",
+    "zh": "举手提问",
+    "kind": "pose"
+  },
+  {
+    "id": "person-gesturing-no",
+    "zh": "摆手说不",
+    "kind": "pose"
+  },
+  {
+    "id": "person-gesturing-ok",
+    "zh": "比 OK",
+    "kind": "pose"
+  },
+  {
+    "id": "person-shrugging",
+    "zh": "耸肩无奈",
+    "kind": "pose"
+  },
+  {
+    "id": "person-facepalming",
+    "zh": "捂脸懊恼",
+    "kind": "pose"
+  },
+  {
+    "id": "person-bowing",
+    "zh": "鞠躬",
+    "kind": "pose"
+  },
+  {
+    "id": "person-tipping-hand",
+    "zh": "伸手介绍",
+    "kind": "pose"
+  },
+  {
+    "id": "person-lifting-weights",
+    "zh": "举重/费力",
+    "kind": "pose"
+  },
+  {
+    "id": "person-climbing",
+    "zh": "攀爬",
+    "kind": "pose"
+  },
+  {
+    "id": "person-juggling",
+    "zh": "杂耍/同时处理多件事",
+    "kind": "pose"
+  },
+  {
+    "id": "person-in-lotus-position",
+    "zh": "打坐/冷静",
+    "kind": "pose"
+  },
+  {
+    "id": "person-cartwheeling",
+    "zh": "翻跟头/兴奋",
+    "kind": "pose"
+  },
+  {
+    "id": "person-pouting",
+    "zh": "生气",
+    "kind": "pose"
+  },
+  {
+    "id": "person-frowning",
+    "zh": "皱眉",
+    "kind": "pose"
+  },
+  {
+    "id": "person-kneeling",
+    "zh": "跪着",
+    "kind": "pose"
+  },
+  {
+    "id": "person-fencing",
+    "zh": "击剑/对抗",
+    "kind": "pose"
+  },
+  {
+    "id": "person-rowing-boat",
+    "zh": "划船",
+    "kind": "pose"
+  },
+  {
+    "id": "person-biking",
+    "zh": "骑车",
+    "kind": "pose"
+  },
+  {
+    "id": "person-swimming",
+    "zh": "游泳",
+    "kind": "pose"
+  },
+  {
+    "id": "person-surfing",
+    "zh": "冲浪",
+    "kind": "pose"
+  },
+  {
+    "id": "man-dancing",
+    "zh": "跳舞",
+    "kind": "pose"
+  },
+  {
+    "id": "woman-dancing",
+    "zh": "跳舞(女)",
+    "kind": "pose"
+  },
+  {
+    "id": "people-hugging",
+    "zh": "拥抱",
+    "kind": "pose"
+  },
+  {
+    "id": "handshake",
+    "zh": "握手",
+    "kind": "pose"
+  },
+  {
+    "id": "clapping-hands",
+    "zh": "鼓掌",
+    "kind": "pose"
+  },
+  {
+    "id": "flexed-biceps",
+    "zh": "有力量",
+    "kind": "pose"
+  },
+  {
+    "id": "thumbs-up",
+    "zh": "点赞",
+    "kind": "pose"
+  },
+  {
+    "id": "waving-hand",
+    "zh": "挥手",
+    "kind": "pose"
+  }
+]

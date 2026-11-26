@@ -1,0 +1,12 @@
+{
+  "idea":      { "concept": "idea",      "index": 0, "sticker": "light-bulb",                    "loop": true },
+  "thumbsup":  { "concept": "thumbsup",  "index": 2, "sticker": "thumbs-up",                     "loop": false },
+  "question":  { "concept": "question",  "index": 4, "sticker": "thinking-face",                 "loop": true },
+  "check":     { "concept": "check",     "index": 5, "sticker": "check-mark-button",             "loop": false },
+  "confetti":  { "concept": "confetti",  "index": 5, "sticker": "party-popper",                  "loop": false },
+  "warning":   { "concept": "warning",   "index": 0, "sticker": "warning",                       "loop": true },
+  "magnifier": { "concept": "magnifier", "index": 0, "sticker": "magnifying-glass-tilted-left",  "loop": true },
+  "growth":    { "concept": "growth",    "index": 0, "sticker": "bar-chart",                     "loop": false },
+  "sparkle":   { "concept": "star",      "index": 2, "sticker": "sparkles",                      "loop": true },
+  "cross":     { "concept": "cross",     "index": 1, "sticker": "cross-mark",                    "loop": false }
+}

@@ -1,0 +1,18 @@
+{
+  "_说明": "论文来源白名单。fetch 阶段会在作者栏（机构名、邮箱域名）、摘要里的链接里找这些名字，一个都对不上就停下，除非加 --force。可以直接编辑：name 是显示名；patterns 是正则（区分大小写的写法见 caseSensitive）；domains 是邮箱/网址域名。",
+  "orgs": [
+    { "name": "Microsoft", "patterns": ["Microsoft"], "domains": ["microsoft.com"] },
+    { "name": "Google", "patterns": ["Google", "DeepMind"], "domains": ["google.com", "deepmind.com", "deepmind.google"] },
+    { "name": "Amazon", "patterns": ["Amazon", "\\bAWS\\b"], "domains": ["amazon.com", "amazon.science"] },
+    { "name": "ByteDance", "patterns": ["ByteDance", "Bytedance", "TikTok", "ByteDance Seed"], "domains": ["bytedance.com", "bytedance.net"] },
+    { "name": "Meta", "caseSensitive": true, "patterns": ["\\bMeta\\b(?![-\\w])", "\\bFAIR\\b", "Facebook"], "domains": ["meta.com", "fb.com", "facebook.com"] },
+    { "name": "OpenAI", "patterns": ["OpenAI"], "domains": ["openai.com"] },
+    { "name": "xAI", "caseSensitive": true, "patterns": ["\\bxAI\\b", "\\bX\\.AI\\b"], "domains": ["x.ai"] },
+    { "name": "Anthropic", "patterns": ["Anthropic"], "domains": ["anthropic.com"] },
+    { "name": "Tencent", "patterns": ["Tencent", "WeChat", "Hunyuan"], "domains": ["tencent.com"] },
+    { "name": "DeepSeek", "patterns": ["DeepSeek"], "domains": ["deepseek.com", "deepseek-ai"] },
+    { "name": "Alibaba", "patterns": ["Alibaba", "Qwen", "Tongyi", "Alibaba Cloud", "Ant Group"], "domains": ["alibaba-inc.com", "alibabacloud.com", "alibaba.com", "antgroup.com", "qwen.ai"] },
+    { "name": "Zhipu", "patterns": ["Zhipu", "Z\\.ai", "GLM Team", "ZhipuAI"], "domains": ["zhipuai.cn", "z.ai", "zhipuai.com", "thudm"] },
+    { "name": "Moonshot", "patterns": ["Moonshot", "Kimi"], "domains": ["moonshot.cn", "moonshot.ai"] }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "fps": 30,
+  "totalFrames": 4139,
+  "scenes": [
+    {
+      "id": "ratio",
+      "start": 0,
+      "dur": 4139,
+      "sentences": [
+        {
+          "id": "r1",
+          "text": "回到主线，还记得那条遛狗绳吗？",
+          "audio": "audio/pilot-ratio/fast/r1.wav",
+          "local": 15,
+          "start": 15,
+          "dur": 127
+        },
+        {
+          "id": "r2",
+          "text": "我们给模型画了个圈，可圈画多大要有把尺子。",
+          "audio": "audio/pilot-ratio/fast/r2.wav",
+          "local": 150,
+          "start": 150,
+          "dur": 149
+        },
+        {
+          "id": "r3",
+          "text": "你可以想象一个抽奖箱，里面全是写着词的小球。",
+          "audio": "audio/pilot-ratio/fast/r3.wav",
+          "local": 307,
+          "start": 307,
+          "dur": 127
+        },
+        {
+          "id": "r4",
+          "text": "手伸进去摸，每个球的机会不一样，这就是概率。",
+          "audio": "audio/pilot-ratio/fast/r4.wav",
+          "local": 442,
+          "start": 442,
+          "dur": 149
+        },
+        {
+          "id": "r5",
+          "text": "大模型写答案，就是一个字一个字地摸球。",
+          "audio": "audio/pilot-ratio/fast/r5.wav",
+          "local": 599,
+          "start": 599,
+          "dur": 136
+        },
+        {
+          "id": "r6",
+          "text": "每摸一次，它给词表里每个词都算一个概率。",
+          "audio": "audio/pilot-ratio/fast/r6.wav",
+          "local": 743,
+          "start": 743,
+          "dur": 110
+        },
+        {
+          "id": "r7",
+          "text": "训练时有新旧两个模型，新的那个正在被更新。",
+          "audio": "audio/pilot-ratio/fast/r7.wav",
+          "local": 861,
+          "start": 861,
+          "dur": 136
+        },
+        {
+          "id": "r8",
+          "text": "我们盯住刚被摸中的词，看它概率变了几倍。",
+          "audio": "audio/pilot-ratio/fast/r8.wav",
+          "local": 1005,
+          "start": 1005,
+          "dur": 119
+        },
+        {
+          "id": "r9",
+          "text": "新概率除以旧概率就是倍数，初中就学过。",
+          "audio": "audio/pilot-ratio/fast/r9.wav",
+          "local": 1132,
+          "start": 1132,
+          "dur": 110
+        },
+        {
+          "id": "r10",
+          "text": "论文管这个倍数叫重要性比例。",
+          "audio": "audio/pilot-ratio/fast/r10.wav",
+          "local": 1250,
+          "start": 1250,
+          "dur": 101
+        },
+        {
+          "id": "r11",
+          "text": "比例是一说明没变，是二就说明翻了一倍。",
+          "audio": "audio/pilot-ratio/fast/r11.wav",
+          "local": 1359,
+          "start": 1359,
+          "dur": 145
+        },
+        {
+          "id": "r12",
+          "text": "PPO 的做法是给比例划一个允许范围。",
+          "audio": "audio/pilot-ratio/fast/r12.wav",
+          "local": 1512,
+          "start": 1512,
+          "dur": 114
+        },
+        {
+          "id": "r13",
+          "text": "超出范围还往外走，这个词就不再更新。",
+          "audio": "audio/pilot-ratio/fast/r13.wav",
+          "local": 1634,
+          "start": 1634,
+          "dur": 119
+        },
+        {
+          "id": "r14",
+          "text": "这个动作叫剪切，超出部分的更新直接清零。",
+          "audio": "audio/pilot-ratio/fast/r14.wav",
+          "local": 1761,
+          "start": 1761,
+          "dur": 145
+        },
+        {
+          "id": "r15",
+          "text": "就像绳子绷直了，狗再使劲也动不了。",
+          "audio": "audio/pilot-ratio/fast/r15.wav",
+          "local": 1914,
+          "start": 1914,
+          "dur": 127
+        },
+        {
+          "id": "r16",
+          "text": "这个范围就是信任区域，GRPO 也照搬了。",
+          "audio": "audio/pilot-ratio/fast/r16.wav",
+          "local": 2049,
+          "start": 2049,
+          "dur": 149
+        },
+        {
+          "id": "r17",
+          "text": "它让比例在一的上下浮动：往下留零点二，往上留零点二八。",
+          "audio": "audio/pilot-ratio/fast/r17.wav",
+          "local": 2206,
+          "start": 2206,
+          "dur": 223
+        },
+        {
+          "id": "r18",
+          "text": "不过论文说，这把尺子对大模型不太公平。",
+          "audio": "audio/pilot-ratio/fast/r18.wav",
+          "local": 2437,
+          "start": 2437,
+          "dur": 162
+        },
+        {
+          "id": "r19",
+          "text": "因为词表又大又长尾，有不少词特别少见。",
+          "audio": "audio/pilot-ratio/fast/r19.wav",
+          "local": 2607,
+          "start": 2607,
+          "dur": 149
+        },
+        {
+          "id": "r20",
+          "text": "先看尾巴上的小词，我们叫它蚂蚁。",
+          "audio": "audio/pilot-ratio/fast/r20.wav",
+          "local": 2764,
+          "start": 2764,
+          "dur": 127
+        },
+        {
+          "id": "r21",
+          "text": "假设旧概率千分之一，新概率千分之二，比例是两倍。",
+          "audio": "audio/pilot-ratio/fast/r21.wav",
+          "local": 2899,
+          "start": 2899,
+          "dur": 179
+        },
+        {
+          "id": "r22",
+          "text": "可它实际只多了千分之一，几乎等于没变。",
+          "audio": "audio/pilot-ratio/fast/r22.wav",
+          "local": 3086,
+          "start": 3086,
+          "dur": 132
+        },
+        {
+          "id": "r23",
+          "text": "再看大象，旧概率百分之五十，新概率百分之六十。",
+          "audio": "audio/pilot-ratio/fast/r23.wav",
+          "local": 3226,
+          "start": 3226,
+          "dur": 158
+        },
+        {
+          "id": "r24",
+          "text": "比例才一点二倍，实际却多了十个百分点。",
+          "audio": "audio/pilot-ratio/fast/r24.wav",
+          "local": 3392,
+          "start": 3392,
+          "dur": 132
+        },
+        {
+          "id": "r25",
+          "text": "结果蚂蚁两倍被剪掉，大象一点二倍没被管住。",
+          "audio": "audio/pilot-ratio/fast/r25.wav",
+          "local": 3532,
+          "start": 3532,
+          "dur": 153
+        },
+        {
+          "id": "r26",
+          "text": "对小词太严，对大词太松，就是这把尺子的毛病。",
+          "audio": "audio/pilot-ratio/fast/r26.wav",
+          "local": 3693,
+          "start": 3693,
+          "dur": 140
+        },
+        {
+          "id": "r27",
+          "text": "论文统计，这类小词占了百分之七点八，不能忽略。",
+          "audio": "audio/pilot-ratio/fast/r27.wav",
+          "local": 3841,
+          "start": 3841,
+          "dur": 175
+        },
+        {
+          "id": "r28",
+          "text": "那有没有更公平的尺子呢？",
+          "audio": "audio/pilot-ratio/fast/r28.wav",
+          "local": 4024,
+          "start": 4024,
+          "dur": 88
+        }
+      ]
+    }
+  ]
+}

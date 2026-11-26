@@ -1,0 +1,19 @@
+{
+  "ratio_def": { "title": "重要性比例", "formula": "r = {{π}} / μ", "legend": "π 新概率 · μ 旧概率" },
+  "ppo_range": { "title": "PPO 的允许范围", "formula": "1 − ε ≤ {{r}} ≤ 1 + ε", "legend": "r 超出范围，梯度就被剪成 0" },
+  "grpo_range": { "title": "GRPO 的允许范围", "formula": "{{0.8}} ≤ r ≤ {{1.28}}", "legend": "ε_low = 0.2，ε_high = 0.28" },
+  "dppo_bound": { "title": "DPPO 的边界", "formula": "| π − μ | ≤ {{δ}}", "legend": "概率变化量不超过 δ" },
+  "diff_identity": { "title": "概率差的另一种写法", "formula": "π − μ = {{μ}} · (r − 1)", "legend": "旧概率 × (比例 − 1)" },
+  "ratio_bound": { "title": "改写成比例的范围", "formula": "| r − 1 | ≤ δ / {{μ}}", "legend": "μ 越小，范围越宽" },
+  "spo_loss": { "title": "SPO 的二次惩罚", "formula": "L = r·Â − |Â| / (2{{ε}}) · (r − 1)²", "legend": "ε 是固定的比例范围" },
+  "spo_opt": { "title": "SPO 的最优点", "formula": "r* = 1 + sign(Â) · {{ε}}", "legend": "正好落在 PPO 的剪切边界上" },
+  "swap": { "title": "把 ε 换成 δ / μ", "formula": "{{ε}} → δ / μ", "legend": "因词而异的范围" },
+  "drpo_loss": { "title": "DRPO 的目标", "formula": "L = r·Â − |Â| / 2δ · {{μ}} · (r − 1)²", "legend": "惩罚里多乘了旧概率 μ" },
+  "drpo_opt": { "title": "DRPO 的最优点", "formula": "π* = μ + sign(Â) · {{δ}}", "legend": "和 DPPO 的边界一样" },
+  "weight": { "title": "梯度前的连续权重", "formula": "w = 1 − sign(Â·(r − 1)) · {{D / δ}}", "legend": "D = | π − μ |，概率变化量" },
+  "weight_out": { "title": "往外冲", "formula": "w = 1 − {{D / δ}}", "legend": "到边界为 0，越界变负" },
+  "weight_in": { "title": "往回走", "formula": "w = 1 + {{D / δ}}", "legend": "拉力被放大" },
+  "spo_penalty_form": { "title": "SPO 惩罚的期望形式", "formula": "Σ |Â| · (π − μ)² / {{μ}}", "legend": "除以旧概率，小词被放大" },
+  "drpo_penalty_form": { "title": "DRPO 惩罚的期望形式", "formula": "Σ |Â| · {{(π − μ)²}}", "legend": "纯粹的概率差平方" },
+  "weight_bound": { "title": "DRPO 权重的范围", "formula": "1 − 1/δ ≤ {{w}} ≤ 1 + 1/δ", "legend": "概率差不超过 1，所以有界" }
+}
